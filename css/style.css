@@ -12229,7 +12229,7 @@ h5,
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -518px;
     z-index: 1;
     padding: 1em;
   }
@@ -14026,5 +14026,33 @@ textarea.form-control {
   80%,
   85% {
     width: calc(100% + 8px);
+  }
+}
+
+.my-works-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.hand-hint {
+  position: absolute;
+  top: -40px;
+  /* Adjust to sit above the button */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  animation: bounce 1.2s infinite;
+  opacity: 0.8;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+    transform: translate(-50%, 10px);
   }
 }
